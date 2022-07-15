@@ -1,0 +1,25 @@
+@import "@sass/abstracts/mixins";
+@import "variables";
+
+footer {
+  .rich-text {
+    font-size: $text-size-14;
+
+    a {
+      color: $text-white;
+    }
+    p {
+      span {
+        color: $text-white;
+      }
+    }
+  }
+
+  .indent-inner {
+    padding: 3rem;
+
+    @include respond-to(all-mobile) {
+      padding: 25px 0;
+    }
+  }
+}
