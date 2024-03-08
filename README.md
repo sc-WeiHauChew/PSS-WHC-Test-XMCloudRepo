@@ -2,7 +2,7 @@
 
 ## QUICK START
 
-1. In an ADMIN terminal:
+1. In an ADMIN terminal: ASDF
 
     ```ps1
     .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword"
