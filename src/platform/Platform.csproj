@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\xmcloud-nextjs-starter.config" />
+    <Content Include="App_Config\Include\zzz\Sitecore.Support.SxaSitemapHandler.config" />
+    <Content Include="bin\MyXMC.Support.dll" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />
