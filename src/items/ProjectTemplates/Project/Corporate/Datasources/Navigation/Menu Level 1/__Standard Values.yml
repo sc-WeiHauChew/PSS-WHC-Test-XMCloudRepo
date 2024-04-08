@@ -1,0 +1,31 @@
+﻿---
+ID: "c3044220-0bc4-4f92-93a1-1cf8c01346e6"
+Parent: "6b807de9-c91a-46ff-9af3-f89b96c2bac0"
+Template: "6b807de9-c91a-46ff-9af3-f89b96c2bac0"
+Path: /sitecore/templates/Project/Corporate/Datasources/Navigation/Menu Level 1/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231011T092627Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ngunguyen@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ngunguyen@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "366159bd-cde0-42fb-850f-636600295545"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231013T024623Z

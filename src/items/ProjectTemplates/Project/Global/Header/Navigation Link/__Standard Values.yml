@@ -1,0 +1,62 @@
+﻿---
+ID: "3f803e53-5755-47c7-8457-38d76e514dd9"
+Parent: "bd0813d9-ab05-4bc7-8726-d03c4a6b0010"
+Template: "bd0813d9-ab05-4bc7-8726-d03c4a6b0010"
+Path: /sitecore/templates/Project/Global/Header/Navigation Link/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240219T023900Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "585326d1-177c-4245-a3f5-59c436aa7672"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "c67108a4-d4db-4073-bf80-9724f097b20a"
+      Hint: Text
+      Value: $name
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240219T023904Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240219T023703Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8872c300-7b6a-4265-b9d6-b598f950d12e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "c67108a4-d4db-4073-bf80-9724f097b20a"
+      Hint: Text
+      Value: $name
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240219T023710Z

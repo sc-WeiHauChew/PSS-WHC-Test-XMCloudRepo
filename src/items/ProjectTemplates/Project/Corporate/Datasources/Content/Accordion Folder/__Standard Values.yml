@@ -1,0 +1,35 @@
+﻿---
+ID: "ed454a05-d7c5-48b9-b8a5-950fb513e141"
+Parent: "54cbb36e-3298-4505-8c20-145dc6278b62"
+Template: "54cbb36e-3298-4505-8c20-145dc6278b62"
+Path: /sitecore/templates/Project/Corporate/Datasources/Content/Accordion Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{CD6F712B-735C-4879-BD88-1E244511DF33}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231023T021447Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c8b3a16-dc33-434a-a7e9-a301e288148c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231025T095337Z

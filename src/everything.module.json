@@ -1,0 +1,29 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Everything",
+    "items": {
+        "includes": [
+            {
+                "name": "ProjectTemplates",
+                "path": "/sitecore/templates/Project",
+				"description": "Do I need to explain I want all items",
+                "scope": "ItemAndDescendants"
+            },
+			{
+                "name": "ProjectLayouts",
+                "path": "/sitecore/layout/Layouts/Project",
+                "scope": "ItemAndDescendants"
+            },
+			{
+                "name": "ProjectRenderings",
+                "path": "/sitecore/layout/Renderings/Project",
+                "scope": "ItemAndDescendants"
+            },
+            {
+                "name": "Content",
+                "path": "/sitecore/content",
+                "scope": "ItemAndDescendants"
+            }
+        ]
+    }
+}

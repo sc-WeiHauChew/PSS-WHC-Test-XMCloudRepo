@@ -1,0 +1,34 @@
+﻿---
+ID: "591b1dbd-12f7-447f-90b0-0ae8ef5c77eb"
+Parent: "50441d50-29eb-4ed7-8389-05ed7937c9ae"
+Template: "50441d50-29eb-4ed7-8389-05ed7937c9ae"
+Path: /sitecore/templates/Project/Corporate/Datasources/Content/Recommendation Link/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231003T081426Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6e338394-ea0f-4c40-8f2b-3b70b12aec5c"
+    - ID: "b32e3fde-3e10-463c-9a2b-098fac222302"
+      Hint: SubTitle
+      Value: $name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231003T081440Z

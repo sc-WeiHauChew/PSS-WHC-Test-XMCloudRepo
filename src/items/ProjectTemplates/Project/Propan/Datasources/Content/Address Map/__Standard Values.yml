@@ -1,0 +1,35 @@
+﻿---
+ID: "7053dbba-2501-486a-8cc7-9fcc6c10e227"
+Parent: "fab7c4fb-15dd-47e6-ad36-96f241df5e6a"
+Template: "fab7c4fb-15dd-47e6-ad36-96f241df5e6a"
+Path: /sitecore/templates/Project/Propan/Datasources/Content/Address Map/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{852291E1-EC23-42CE-BB97-689B97276B6A}"
+Languages:
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240226T063616Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8caef31-e94b-461f-b6f3-1230c1fcfc93"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240226T063637Z

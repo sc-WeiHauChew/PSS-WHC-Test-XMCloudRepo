@@ -1,0 +1,101 @@
+﻿---
+ID: "1657651d-5f6f-49fe-9436-90987f619961"
+Parent: "2f5db82f-f36d-441b-a119-c659c2398eae"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: /sitecore/content/SkatePark/SkatePark/Presentation/Partial Designs/Footer
+BranchID: "8204a950-cbaa-4d06-878b-11ced5ddc1ad"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: footer
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{081BFEE3-E403-485C-B02A-0FBE4577C4EE}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{37B2F6CC-FFCD-4495-8F6B-03631806C283}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="?Styles=%7b5E3B0651-37B5-46F0-AE92-7AA0E7785A83%7d%7c%7b9EA98168-43FB-48C0-B492-B988D6F84027%7d%7c%7b88D84A6F-C79A-46FD-82E6-B9000AA96014%7d%7c%7b282167FA-8FEC-4601-8547-876154126535%7d%7c%7bCB5C9997-7C34-4692-BBA2-04A78A96F1E7%7d%7c%7bD9DED3DD-3FE3-4A98-BDEA-6CDB3D3203A0%7d%7c%7bCD0A843C-FC51-403D-8842-C928598C56A6%7d%7c%7b2F4D5A71-6B44-4ECF-8AAA-9E9E3AE80FD4%7d%7c%7bD14F4691-9614-4CBF-93B6-B38A57895A03%7d%7c%7b3F2FB922-694B-48AE-887C-F5D1184EC5E5%7d%7c%7b7394AEC9-206A-4CA5-AAD5-6C336D47BC65%7d%7c%7b17540EC2-7E85-48A1-8B86-AA243C8B38F4%7d%7c%7b71A700DE-E7E9-4F64-8FBF-B6F4621593BB%7d%7c%7bE5B0C038-0271-48FD-97F7-56DFB2E39A45%7d%7c%7b6C5FF3D0-4A84-4509-8335-490D471312CF%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d&amp;DynamicPlaceholderId=1"
+          s:ph="headless-footer" />
+        <r
+          uid="{0F9768EF-23A4-4CB2-946E-2355F9910649}"
+          p:after="r[@uid='{37B2F6CC-FFCD-4495-8F6B-03631806C283}']"
+          s:ds="local:/Data/Address"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?Styles=%7b2CBA9467-89F6-4AB9-8701-7BEEEA86E0FC%7d&amp;FieldNames=%7b9FD7293F-6CAE-44E1-8D91-3EF00624AF88%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b31A49E90-E4B4-4F04-A3C7-E15B6835990F%7d"
+          s:ph="/headless-footer/container-1" />
+        <r
+          uid="{CF5B7BD3-BEA6-4272-98F4-DDCC28B3A7A5}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/Contact info"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?Styles=%7b2CBA9467-89F6-4AB9-8701-7BEEEA86E0FC%7d&amp;FieldNames=%7b9FD7293F-6CAE-44E1-8D91-3EF00624AF88%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b31A49E90-E4B4-4F04-A3C7-E15B6835990F%7d"
+          s:ph="/headless-footer/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EDB00EAA-5ACA-4C4D-8B88-3195D992F980}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240308T064857Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Wei Hau Chew
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Wei Hau Chew
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e495d44-cd5c-445a-8367-9ba2ba2fc08b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Wei Hau Chew
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240322T050606Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240308T064857Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Wei Hau Chew
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8ece565d-bf1d-4387-8915-a3b246fc5308"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Wei Hau Chew
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240322T050609Z

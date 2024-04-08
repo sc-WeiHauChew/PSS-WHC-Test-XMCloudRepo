@@ -1,0 +1,35 @@
+﻿---
+ID: "68c981fb-fb98-442a-bec7-77e53fd110d6"
+Parent: "67c9d0f4-36b8-4a56-981b-7364f5acaafd"
+Template: "67c9d0f4-36b8-4a56-981b-7364f5acaafd"
+Path: /sitecore/templates/Project/Corporate/Datasources/Form/Form Enquiries/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{B43AD7B9-ABD8-48E2-B30D-A6A1A7EBA4AD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231010T070922Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f60c4275-ddaf-4513-9c55-51a5c1d14fba"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231010T071151Z

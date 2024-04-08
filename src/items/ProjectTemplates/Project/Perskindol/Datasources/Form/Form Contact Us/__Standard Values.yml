@@ -1,0 +1,35 @@
+﻿---
+ID: "65545abe-a885-4c93-a0ad-80c7d9818a38"
+Parent: "f8f5822f-29af-4e35-aa14-02705816d39e"
+Template: "f8f5822f-29af-4e35-aa14-02705816d39e"
+Path: /sitecore/templates/Project/Perskindol/Datasources/Form/Form Contact Us/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{4CABCD23-2714-4D2E-A4D2-4E619012F1A4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231114T090557Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a01d6d7f-c266-47ef-b44a-bb64eb001899"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\hta@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231124T030817Z

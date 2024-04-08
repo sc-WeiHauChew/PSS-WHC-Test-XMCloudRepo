@@ -1,0 +1,35 @@
+﻿---
+ID: "20d12ccf-e10d-4628-a106-64901280a14a"
+Parent: "d4bcb9c9-3627-4c0a-b2fc-6dd0044b01a7"
+Template: "d4bcb9c9-3627-4c0a-b2fc-6dd0044b01a7"
+Path: /sitecore/templates/Project/Corporate/Datasources/Tab Section Image/Tab Section Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{23ABD691-E744-4DC2-B371-CE6EBC5844D4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230924T194822Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ngunguyen@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ngunguyen@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47518567-8fe5-49bc-a954-29d0a770b4dd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ngunguyen@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230925T075420Z

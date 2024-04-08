@@ -1,0 +1,44 @@
+﻿---
+ID: "a30585ca-df12-4f42-a204-9f1e19a8e5cf"
+Parent: "c3104ddd-4356-4bd6-8921-60b3bf108491"
+Template: "c3104ddd-4356-4bd6-8921-60b3bf108491"
+Path: /sitecore/templates/Project/Corporate/Pages/News Listing/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {03C5C783-F4AB-4D3B-A170-B8308E079A50}
+    {7372081A-8FA0-4484-927F-4CCB257A1DCA}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231005T104020Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\anguyen@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\anguyen@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aefeefac-32b1-4d2c-a5c0-dcaf9b2d510e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ngunguyen@zuelligpharma.com
+    - ID: "c593b1fb-cee5-4732-b4a1-140b1a8b65f4"
+      Hint: Image
+      Value: |
+        <image mediaid="{7EB5C922-0D7E-4EE4-9C62-40C3D4508C4C}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240226T072608Z

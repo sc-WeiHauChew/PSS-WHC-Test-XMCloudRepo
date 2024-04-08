@@ -1,0 +1,34 @@
+﻿---
+ID: "846550ed-c33f-4087-92ba-bbcb2fb39e8e"
+Parent: "9645a074-64a8-4a27-b91e-60afa9cf9385"
+Template: "9645a074-64a8-4a27-b91e-60afa9cf9385"
+Path: /sitecore/templates/Project/Corporate/Datasources/CTA/Floating Button/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b8f2124-89e3-4c4d-82dc-5a211b6797d3"
+      Hint: IsShow
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231128T023107Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0492ac20-114e-4fb6-b88c-ecb4946ae68e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231128T023128Z

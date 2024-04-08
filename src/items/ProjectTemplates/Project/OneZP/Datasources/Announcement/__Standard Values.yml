@@ -1,0 +1,31 @@
+﻿---
+ID: "0ed2309a-0f57-409f-b8fb-5ca59ddd4152"
+Parent: "599ad993-f20d-4023-940d-8bc1dbe36c1e"
+Template: "599ad993-f20d-4023-940d-8bc1dbe36c1e"
+Path: /sitecore/templates/Project/OneZP/Datasources/Announcement/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231212T032348Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7bdc8dae-094a-4a4b-8d7c-7fab7b72d4d0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dpham@zuelligpharma.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231212T032348Z
