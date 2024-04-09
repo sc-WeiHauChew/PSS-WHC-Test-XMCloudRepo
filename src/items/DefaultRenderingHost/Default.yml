@@ -15,10 +15,10 @@ SharedFields:
   Value: 
 - ID: "e32c1801-79b3-4fc1-a9c4-3c6e6c2968ae"
   Hint: ServerSideRenderingEngineApplicationUrl
-  Value: "https://xmc-3ebzidikghzbcustlfnwb3.sitecorecloud.io/"
+  Value: "https://xmc-4bgmtmlk4dkiciqztggbd5.sitecorecloud.io"
 - ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
   Hint: ServerSideRenderingEngineEndpointUrl
-  Value: "https://xmc-3ebzidikghzbcustlfnwb3.sitecorecloud.io:443/api/editing/render"
+  Value: "https://xmc-4bgmtmlk4dkiciqztggbd5.sitecorecloud.io:443/api/editing/render"
 Languages:
 - Language: "de-DE"
   Fields:
@@ -62,14 +62,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7949d89e-daa3-47bf-943f-fb3bb563fbaa"
+      Value: "89d4d90f-fcc5-4765-8154-966779964704"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Wei Hau Chew
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240408T062003Z
+      Value: 20240408T082641Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
