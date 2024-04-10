@@ -1,9 +1,7 @@
 const jssConfig = require('./src/temp/config');
-const packageConfig = require('./package.json').config;
-const { getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs');
 const plugins = require('./src/temp/next-config-plugins') || {};
 
-const publicUrl = getPublicUrl();
+const publicUrl = jssConfig.publicUrl;
 
 /**
  * @type {import('next').NextConfig}
@@ -26,11 +24,29 @@ const nextConfig = {
     locales: ['en'],
     // This is the locale that will be used when visiting a non-locale
     // prefixed path e.g. `/styleguide`.
-    defaultLocale: packageConfig.language,
+    defaultLocale: jssConfig.defaultLanguage,
   },
-  
+
   // Enable React Strict Mode
   reactStrictMode: true,
+
+  // use this configuration to ensure that only images from the whitelisted domains
+  // can be served from the Next.js Image Optimization API
+  // see https://nextjs.org/docs/app/api-reference/components/image#remotepatterns
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'edge*.**',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'feaas*.blob.core.windows.net',
+        port: '',
+      },
+    ]
+  },
 
   async rewrites() {
     // When in connected mode we want to proxy Sitecore paths off to Sitecore
@@ -45,10 +61,15 @@ const nextConfig = {
         source: '/-/:path*',
         destination: `${jssConfig.sitecoreApiHost}/-/:path*`,
       },
-      // visitor identification
+      // healthz check
       {
-        source: '/layouts/system/:path*',
-        destination: `${jssConfig.sitecoreApiHost}/layouts/system/:path*`,
+        source: '/healthz',
+        destination: '/api/healthz',
+      },
+      // rewrite for Sitecore service pages
+      {
+        source: '/sitecore/service/:path*',
+        destination: `${jssConfig.sitecoreApiHost}/sitecore/service/:path*`,
       },
     ];
   },
@@ -57,4 +78,4 @@ const nextConfig = {
 module.exports = () => {
   // Run the base config through any configured plugins
   return Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
-}
+};

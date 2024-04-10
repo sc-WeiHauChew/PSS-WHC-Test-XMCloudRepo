@@ -63,19 +63,15 @@
     <PackageReference Include="Sitecore.XmCloud.LayoutService" />
     <PackageReference Include="Sitecore.XmCloud.Assemblies" />
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
-    <PackageReference Include="Sitecore.XmCloud.XA.Foundation.Multisite" />
-    <PackageReference Include="Sitecore.XmCloud.XA.Foundation.SiteMetadata" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\xmcloud-nextjs-starter.config" />
-    <!-- <Content Include="App_Config\Include\zzz\Sitecore.Support.SxaSitemapHandler.config" /> -->
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <!-- <Compile Include="SxaSitemapHandler.cs" /> -->
+    <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

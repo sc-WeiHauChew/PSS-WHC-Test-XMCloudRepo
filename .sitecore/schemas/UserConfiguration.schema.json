@@ -14,6 +14,10 @@
     },
     "$schema": {
       "type": "string"
+    },
+    "defaultEndpoint": {
+      "type": "string",
+      "description": "Default Sitecore instance to fetch or push data to"
     }
   },
   "definitions": {
@@ -26,6 +30,10 @@
         "authority"
       ],
       "properties": {
+        "ref": {
+          "type": "string",
+          "description": "Name of the environment to depends on"
+        },
         "allowWrite": {
           "type": "boolean",
           "description": "Whether writing data to this endpoint is allowed (i.e. to prevent accidental writes to production)"
@@ -57,6 +65,29 @@
           "type": "string",
           "description": "OAuth refresh token for this endpoint (use login command to get this)"
         },
+        "refreshTokenParameters": {
+          "type": "object",
+          "description": "OAuth parameters for this endpoint (use login command to get this)",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "expiresIn": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Preserves access token lifetime. Set during the login operation. Related to LastUpdated property. System use only.",
+          "format": "int32"
+        },
+        "lastUpdated": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "description": "Preserve date and time when environmet was updated during the login. System use only.",
+          "format": "date-time"
+        },
         "clientId": {
           "type": "string",
           "description": "OAuth client ID for this endpoint",
@@ -72,6 +103,17 @@
           "additionalProperties": {
             "type": "string"
           }
+        },
+        "insecure": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "If true, allows cli to use http protocol to communicate with Identity Service Authority. "
+        },
+        "audience": {
+          "type": "string",
+          "description": "The unique identifier of the audience for an issued token"
         }
       }
     }

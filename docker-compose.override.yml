@@ -8,7 +8,8 @@ services:
       args:
         PARENT_IMAGE: ${NODEJS_PARENT_IMAGE}
         NODEJS_VERSION: ${NODEJS_VERSION}
-    scale: 0
+    deploy:
+      replicas: 0
 
   rendering:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering:${VERSION:-latest}
@@ -25,6 +26,7 @@ services:
       PUBLIC_URL: "https://${RENDERING_HOST}"
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       SITECORE_API_KEY: "${SITECORE_API_KEY_xmcloudpreview}"
+      DISABLE_SSG_FETCH: ${DISABLE_SSG_FETCH}
     depends_on:
       - cm
       - nodejs
@@ -66,7 +68,7 @@ services:
       context: ./docker/build/cm
       args:
         PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xmcloud-cm:${SITECORE_VERSION}
-        TOOLS_IMAGE: ${TOOLS_IMAGE}
+        TOOLS_IMAGE: ${TOOLS_IMAGE}:${SITECORE_VERSION}
     volumes:
       - ${LOCAL_DEPLOY_PATH}\platform:C:\deploy
       - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
@@ -77,9 +79,10 @@ services:
       JSS_DEPLOYMENT_SECRET_xmcloudpreview: ${JSS_DEPLOYMENT_SECRET_xmcloudpreview}
       SITECORE_JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       SITECORE_EDITING_HOST_PUBLIC_HOST: "${RENDERING_HOST}"
+      SITECORE_GraphQL_CORS: ${SITECORE_GRAPHQL_CORS}
       SITECORE_Pages_Client_Host: ${SITECORE_Pages_Client_Host}
       SITECORE_Pages_CORS_Allowed_Origins: ${SITECORE_Pages_CORS_Allowed_Origins}
       ## Development Environment Optimizations
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,DebugOn,DiagnosticsOff,InitMessagesOff
       Sitecore_AppSettings_exmEnabled:define: "no" # remove to turn on EXM
-    entrypoint: powershell -Command "& C:/tools/entrypoints/iis/Development.ps1"
+    entrypoint: powershell -Command "& C:/tools/entrypoints/iis/XmCloudDevelopment.ps1"

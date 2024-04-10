@@ -1,10 +1,16 @@
 @import "@sass/abstracts/vars";
 @import "variables";
 
-$hamburger-width: 30px;
+$hamburger-width: 28px;
 $hamburger-height: 18px;
 $border-size: 6px;
 $hamburger-margin: 18px;
+
+.navigation {
+  .menu-mobile-navigate-wrapper {
+    width: 100%;
+  }
+}
 
 .navigation.navigation-horizontal {
   width: 100%;
@@ -15,14 +21,14 @@ $hamburger-margin: 18px;
     display: none;
   }
   
-  @include respond-to(all-mobile) {
+  @include respond-to(mobile-large) {
     padding-right: 0;
   }
 
   .component-content {
     display: inline-block;
 
-    @include respond-to(all-mobile) {
+    @include respond-to(mobile-large) {
       display: none;
     }
     
@@ -34,6 +40,9 @@ $hamburger-margin: 18px;
     }
   
     .level0, .level1 {
+      float: left;
+      margin-left: 30px;
+
       >.navigation-title {
         >a {
           border-width: 0;
@@ -44,10 +53,10 @@ $hamburger-margin: 18px;
     }
   }
 
-  @include respond-to(all-mobile) {
+  @include respond-to(mobile-large) {
     .component-content {
       display: none;
-      position: absolute;
+      position: fixed;
       top: 0;
       bottom: 0;
       right: 0;
@@ -73,12 +82,14 @@ $hamburger-margin: 18px;
       }
 
       .level0, .level1 {
+        float: unset;
+        margin-left: 0;
         >.navigation-title {
           >a {
             font-size: $text-size-30;
             line-height: 90px;
             >span {
-            color: $text-white;
+              color: $text-white;
             }
           }
         }
@@ -86,16 +97,14 @@ $hamburger-margin: 18px;
     }
 
     .menu-mobile-navigate-wrapper {
-      width: 100%;
-  
       .menu-mobile-navigate {
         display: inline-block;
         z-index: 2;
         position: absolute;
         right: $hamburger-margin;
         top: $hamburger-margin;
-        height: 30px;
-        width: 30px;
+        height: $hamburger-width;
+        width: $hamburger-width;
         opacity: 0;
 
         &:checked ~ {
@@ -104,7 +113,7 @@ $hamburger-margin: 18px;
               content: "\00d7";
               color: $text-basic-active;
               font-size: $text-size-48;
-              position: absolute;
+              position: fixed;
               top: 0;
               right: 0;
               margin-top: calc($hamburger-margin + ($hamburger-margin / 2));

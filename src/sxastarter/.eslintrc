@@ -4,14 +4,15 @@
     "next",
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
+    "prettier",
     "plugin:yaml/recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": [
     "@typescript-eslint",
     "prettier",
-    "yaml"
+    "yaml",
+    "react"
   ],
   "ignorePatterns": [".generated/**/*", "**/*.d.ts", "**/*.js"],
   "rules": {

@@ -1,8 +1,8 @@
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import config from 'temp/config';
 
-// Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
-// If you're not supporting the Experience Editor, you can remove this.
-const publicUrl = getPublicUrl();
+// Prefix public assets with a public URL to enable compatibility with Sitecore editors.
+// If you're not supporting Sitecore editors, you can remove this.
+const publicUrl = config.publicUrl;
 
 const Navigation = (): JSX.Element => (
   <div>

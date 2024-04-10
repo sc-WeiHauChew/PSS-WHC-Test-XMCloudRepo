@@ -6,7 +6,7 @@
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PlatformVersion>0.*</PlatformVersion>
+    <PlatformVersion>1.*</PlatformVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Update="Sitecore.XmCloud.Kernel" Version="$(PlatformVersion)" />
@@ -14,8 +14,6 @@
     <PackageReference Update="Sitecore.XmCloud.ContentSearch.Linq" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.XmCloud.LayoutService" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.XmCloud.Assemblies" Version="$(PlatformVersion)" />
-    <PackageReference Update="Sitecore.XmCloud.XA.Foundation.Multisite" Version="$(PlatformVersion)" />
-    <PackageReference Update="Sitecore.XmCloud.XA.Foundation.SiteMetadata" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.Assemblies.SitecoreHeadlessServicesServer" Version="19.*" />
   </ItemGroup>
 </Project>

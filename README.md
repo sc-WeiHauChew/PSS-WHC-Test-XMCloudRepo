@@ -1,8 +1,8 @@
-# XM Cloud Style Guide (Next JS)
+# XM Cloud Starter Kit (Next JS)
 
 ## QUICK START
 
-1. In an ADMIN terminal: ASDF
+1. In an ADMIN terminal:
 
     ```ps1
     .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword"

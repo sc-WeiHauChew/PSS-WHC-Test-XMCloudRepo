@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { Link, LinkField, Text, TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  Link,
+  LinkField,
+  Text,
+  TextField,
+  useSitecoreContext,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Id: string;
@@ -15,7 +21,7 @@ interface Fields {
 type NavigationProps = {
   params?: { [key: string]: string };
   fields: Fields;
-  handleClick: () => void;
+  handleClick: (event?: React.MouseEvent<HTMLElement>) => void;
   relativeLevel: number;
 };
 
@@ -36,44 +42,53 @@ const getNavigationText = function (props: NavigationProps): JSX.Element | strin
 const getLinkField = (props: NavigationProps): LinkField => ({
   value: {
     href: props.fields.Href,
-    title: props.fields.DisplayName,
+    title: getLinkTitle(props),
     querystring: props.fields.Querystring,
   },
 });
 
 export const Default = (props: NavigationProps): JSX.Element => {
   const [isOpenMenu, openMenu] = useState(false);
+  const { sitecoreContext } = useSitecoreContext();
+  const styles =
+    props.params != null
+      ? `${props.params.GridParameters ?? ''} ${props.params.Styles ?? ''}`.trimEnd()
+      : '';
+  const id = props.params != null ? props.params.RenderingIdentifier : null;
 
   if (!Object.values(props.fields).length) {
     return (
-      <div className={`component navigation`}>
+      <div className={`component navigation ${styles}`} id={id ? id : undefined}>
         <div className="component-content">[Navigation]</div>
       </div>
     );
   }
 
-  const handleToggleMenu = (flag?: boolean): void => {
+  const handleToggleMenu = (event?: React.MouseEvent<HTMLElement>, flag?: boolean): void => {
+    if (event && sitecoreContext?.pageEditing) {
+      event.preventDefault();
+    }
+
     if (flag !== undefined) {
       return openMenu(flag);
     }
 
     openMenu(!isOpenMenu);
   };
+
   const list = Object.values(props.fields)
     .filter((element) => element)
     .map((element: Fields, key: number) => (
       <NavigationList
         key={`${key}${element.Id}`}
         fields={element}
-        handleClick={() => handleToggleMenu(false)}
+        handleClick={(event: React.MouseEvent<HTMLElement>) => handleToggleMenu(event, false)}
         relativeLevel={1}
       />
     ));
-  const styles =
-    props.params != null ? `${props.params.GridParameters} ${props.params.Styles}` : null;
 
   return (
-    <div className={`component navigation ${styles}`}>
+    <div className={`component navigation ${styles}`} id={id ? id : undefined}>
       <label className="menu-mobile-navigate-wrapper">
         <input
           type="checkbox"
@@ -93,14 +108,11 @@ export const Default = (props: NavigationProps): JSX.Element => {
 };
 
 const NavigationList = (props: NavigationProps) => {
-  let title;
-  if (props.fields.NavigationTitle) {
-    title = props.fields.NavigationTitle.value?.toString();
-  } else if (props.fields.Title) {
-    title = props.fields.Title.value?.toString();
-  } else {
-    title = props.fields.DisplayName;
-  }
+  const { sitecoreContext } = useSitecoreContext();
+  const [active, setActive] = useState(false);
+  const classNameList = `${props.fields.Styles.concat('rel-level' + props.relativeLevel).join(
+    ' '
+  )}`;
 
   let children: JSX.Element[] = [];
   if (props.fields.Children && props.fields.Children.length) {
@@ -115,16 +127,33 @@ const NavigationList = (props: NavigationProps) => {
   }
 
   return (
-    <li
-      className={props.fields.Styles.concat('rel-level' + props.relativeLevel).join(' ')}
-      key={props.fields.Id}
-    >
-      <div className="navigation-title">
-        <Link field={getLinkField(props)} title={title} onClick={props.handleClick}>
+    <li className={`${classNameList} ${active ? 'active' : ''}`} key={props.fields.Id} tabIndex={0}>
+      <div
+        className={`navigation-title ${children.length ? 'child' : ''}`}
+        onClick={() => setActive(() => !active)}
+      >
+        <Link
+          field={getLinkField(props)}
+          editable={sitecoreContext.pageEditing}
+          onClick={props.handleClick}
+        >
           {getNavigationText(props)}
         </Link>
       </div>
       {children.length > 0 ? <ul className="clearfix">{children}</ul> : null}
     </li>
   );
+};
+
+const getLinkTitle = (props: NavigationProps): string | undefined => {
+  let title;
+  if (props.fields.NavigationTitle?.value) {
+    title = props.fields.NavigationTitle.value.toString();
+  } else if (props.fields.Title?.value) {
+    title = props.fields.Title.value.toString();
+  } else {
+    title = props.fields.DisplayName;
+  }
+
+  return title;
 };
